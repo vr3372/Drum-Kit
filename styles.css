@@ -1,81 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-align: center;
-  background-color: #283149;
+  background-image: linear-gradient(#81ddc1, #01252a);
 }
 
 h1 {
   font-size: 5rem;
-  color: #DBEDF3;
+  color: #045b66;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
-
+  text-shadow: 3px 0 #9a1f40;
 }
-
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
-}
-
 .w {
-
+  background-image: url(images/tom1.png);
 }
-
 .a {
-
+  background-image: url(images/tom2.png);
 }
-
 .s {
-
+  background-image: url(images/tom1.png);
 }
-
 .d {
-
+  background-image: url(images/tom2.png);
 }
-
 .j {
-
+  background-image: url(images/tom2.png);
 }
-
 .k {
-
+  background-image: url(images/tom1.png);
 }
-
 .l {
-
+  background-image: url(images/tom2.png);
+}
+.m {
+  background-image: url(images/tom1.png);
+}
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+  padding-bottom: 3px;
+  font-family: "Cormorant Garamond", serif;
 }
 
-.set {
-  margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
+span {
   color: red;
 }
 
+.setone,
+.settwo {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px;
+  justify-content: space-evenly;
+  padding: 49px 200px;
+}
+
 .drum {
-  outline: none;
-  border: 10px solid #404B69;
-  font-size: 5rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
-  display: inline-block;
   width: 150px;
   height: 150px;
-  text-align: center;
-  margin: 10px;
-  background-color: white;
+  display: inline-block;
+  border-radius: 15px;
+  border: none;
+  outline-style: none;
+  font-size: 3rem;
+  color: #dd7631;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+
+.drum:hover {
+  box-shadow: 0 0 10px 1px #000;
+}
+
+.drum:active {
+  transform: scale(0.95);
+  transition-duration: 300ms;
+}
+/* media queries */
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 3rem;
+    padding: 20px 0 50px;
+  }
+  .setone,
+  .settwo {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 70px;
+    justify-content: space-evenly;
+    padding: 30px 5% 60px;
+  }
+  .drum {
+    width: 70px;
+    height: 70px;
+    border-radius: 2px;
+    font-size: 10%;
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 3px;
+    font-size: 50%;
+  }
 }
