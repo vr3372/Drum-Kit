@@ -70,9 +70,6 @@ span {
   color: #dd7631;
   font-family: "Cormorant Garamond", serif;
   font-weight: bold;
-}
-
-.drum:hover {
   box-shadow: 0 0 10px 1px #000;
 }
 
