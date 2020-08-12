@@ -92,7 +92,7 @@ span {
     grid-template-columns: 70px 70px 70px 70px;
     grid-template-rows: 70px;
     justify-content: space-evenly;
-    padding: 30px 5% 60px;
+    padding: 30px 5% 100px;
   }
   .drum {
     width: 70px;
@@ -101,7 +101,7 @@ span {
     font-size: 10%;
   }
   footer {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 3px;
     font-size: 50%;
   }
