@@ -71,6 +71,7 @@ span {
   font-family: "Cormorant Garamond", serif;
   font-weight: bold;
   box-shadow: 0 0 10px 1px #000;
+  background-color: #fff;
 }
 
 .drum:active {
