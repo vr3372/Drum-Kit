@@ -49,13 +49,14 @@ span {
   color: red;
 }
 
-.setone,
-.settwo {
+.setone {
   display: grid;
   grid-template-columns: 150px 150px 150px 150px;
-  grid-template-rows: 150px;
+  grid-template-rows: 150px 150px;
   justify-content: space-evenly;
-  padding: 49px 200px;
+  margin: 50px 0 85px;
+  grid-row-gap: 60px;
+  padding: 0 180px;
 }
 
 .drum {
@@ -81,28 +82,50 @@ span {
 }
 /* media queries */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 576px) and (orientation: portrait) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 20px 0 50px;
   }
-  .setone,
-  .settwo {
+  .setone {
     display: grid;
-    grid-template-columns: 70px 70px 70px 70px;
-    grid-template-rows: 70px;
+    grid-template-columns: 85px 85px;
+    grid-template-rows: 85px 85px 85px 85px;
     justify-content: space-evenly;
-    padding: 30px 5% 100px;
+    margin: 0 0 25px;
+    grid-row-gap: 20px;
+    padding: 0 5%;
   }
   .drum {
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
     border-radius: 2px;
     font-size: 10%;
   }
   footer {
-    padding-top: 80px;
+    padding-top: 65px;
     padding-bottom: 3px;
     font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .setone {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px;
+    justify-content: space-evenly;
+    margin: 50px 0 80px;
+    grid-row-gap: 60px;
+    padding: 0 0px;
+  }
+  .drum {
+    width: 120px;
+    height: 120px;
+    border-radius: 2px;
+    font-size: 10%;
+  }
+  footer {
+    padding-top: 65px;
   }
 }
