@@ -6,6 +6,8 @@
 body {
   text-align: center;
   background-color: rgb(95, 138, 155);
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -77,6 +79,10 @@ span {
 .drum:active {
   transform: scale(0.95);
   transition-duration: 300ms;
+}
+
+.HPVvwb {
+  max-width: 20px;
 }
 /* media queries */
 
